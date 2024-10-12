@@ -9,7 +9,13 @@ var intsec=function(arr,arr2)
             set2.add(n);
         }
     }
-    return [...set2];
+    let num=[];
+    for(let n of set2)
+    {
+        num.push(n);
+    }
+   // return [...set2];
+   return num;
 }
 let arr=[1,2,2,3,3];
 let arr2=[2,3];
