@@ -1,11 +1,8 @@
 // Write your code below:
-// Get all the list elements
-const fruits = document.getElementsByClassName('fruit');
-
-// Change the background color of the 3rd element
-fruits[2].style.backgroundColor = 'yellow';
+const fruits = document.getElementsByTagName('li');
+fruits[4].style.color = 'blue';
 
 // Make all elements bold
 for (let i = 0; i < fruits.length; i++) {
-  fruits[i].style.fontWeight = 'bold';
+  fruits[i].style.fontStyle = 'italic';
 }
