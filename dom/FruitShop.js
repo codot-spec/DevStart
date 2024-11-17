@@ -1,17 +1,11 @@
-// Write your code below
-const header = document.getElementById('header');
-const mainHeading = document.getElementById('main-heading');
-const basketHeading = document.getElementById('basket-heading');
-const thanksDiv = document.getElementById('thanks');
-mainHeading.textContent = 'Fruit World';
-mainHeading.style.color = 'orange';
+// Write your code below:
+// Get all the list elements
+const fruits = document.getElementsByClassName('fruit');
 
-header.style.backgroundColor = 'green';
-header.style.borderBottom = '2px solid orange';
+// Change the background color of the 3rd element
+fruits[2].style.backgroundColor = 'yellow';
 
-basketHeading.style.color = 'green';
-
-
-const para = document.createElement('p');
-para.textContent = 'Please visit us again';
-thanksDiv.appendChild(para);
+// Make all elements bold
+for (let i = 0; i < fruits.length; i++) {
+  fruits[i].style.fontWeight = 'bold';
+}
